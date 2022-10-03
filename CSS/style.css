@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 500px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    min-height: 25.125rem;
+    background-image: url("../images/09-day.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-color: black;
+    z-index: 1;
+}
+
+.header__menu{
+    overflow: hidden;
+    background-color: #D2A88C;
+    position: relative;
+}
+
+/* .header__links{
+    display: none;
+} */
+
+.header__menu a{
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; 
+}
+
+.header__icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header__menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header__bar{
+    height: 3rem;
+    background-image: url("../images/bonz.ai-logo-black-landscape.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+}
+
+.header__bar--active{
+    background-color: #DFE4E8;
+    color: white;
+}
+
+.button--desktop{
+    display: none;
+}
+
+.main-content{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
