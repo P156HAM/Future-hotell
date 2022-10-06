@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Book now</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <aside class="header__mobile-items">
+                <nav class="header__menu">
+                    <a class="header__bar header__bar--active"></a>
+                    <nav id="headerLinks" class="header__links">
+                    <a href="/index.html">HOME</a>
+                    <a href="#">ACTIVITIES</a>
+                    <a href="/virtual.html">VIRTUAL TOUR</a> 
+                    </nav>
+                    <a href="#" class="header__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </aside>
+            <aside  class="header__desktop-items">
+                <figure class="header__desktop-logo"></figure>
+                <nav id="headerLinks" class="header__links header__links--desktop">
+                    <a href="/index.html">HOME</a>
+                    <a href="#">ACTIVITIES</a>
+                    <a href="/virtual.html">VIRTUAL TOUR</a> 
+                </nav>
+                <button class="button button--header"> <a href="book.html"> BOOK NOW </a> </button>
+            </aside>
+        </header>
+
+        <main class="main-content">
+            <section class="room-list">
+                <article class="room-list__booking">
+                    <aside class="room-list__input">
+                        <p>Check in Date</p>
+                        <input type="date">
+                    </aside>
+                    <aside class="room-list__input">
+                        <p>Check out Date</p>
+                        <input type="date">
+                    </aside>
+                    <aside class="room-list__input">
+                        <p>Room size</p>
+                        <select>
+                            <option selected>1 person</option>
+                            <option>2 persons</option>
+                            <option>3 persons</option>
+                            <option>4 persons</option>
+                        </select>
+                    </aside>
+                    <button class="button button--booking">Search</button>
+                </article>
+                
+                <article class="room-list__title">
+                    <h2>ROOMS</h2>
+                    <p>We add love to your experience</p>
+                </article>
+                <article class="room-list__rooms">
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/01-night.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>QUEEN ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/02-night.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>KING ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/03-day.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>ROMANTIC ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/04-night.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>JOY ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/05-night.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>FAMILY ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                    <article class="room-list__room">
+                        <img class="room-list__img" src="/images/06-night.jpg" alt="a picture of a beautiful room in night">
+                        <section class="room-list__info">
+                            <h2>CREATIVE ROOM</h2>
+                            <p>2 PERSONS</p>
+                            <p>Price: 2000kr</p>
+                        </section>
+                        <button class="button">BOOK NOW</button>
+                    </article>
+                </article>
+            </section>    
+        </main>
+
+        <footer class="footer">
+            <section class="footer__staff">
+                <h2>MEET OUR STAFF</h2>
+                <article class="footer__images">
+                    <figure class="footer__img footer__img-1"></figure>
+                    <figure class="footer__img footer__img-2"></figure>
+                    <figure class="footer__img footer__img-3"></figure>
+                    <figure class="footer__img footer__img-4"></figure>
+                </article>
+            </section>
+            <section class="footer__subscribe">
+                <h3>MY E-MAIL BOX NEED SOME LOVE</h3>
+                <input type="email" placeholder="Email">
+                <button class="button button--subscribe">SUBSCRIBE</button>
+            </section>
+            <section class="footer__contact"></section>
+            <p>© 2022 BONZ.AI</p>
+        </footer>
+        
+    </div> 
+    <script src="menu-bar.js"></script>   
+</body>
+</html>

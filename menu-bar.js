@@ -1,5 +1,6 @@
 function myFunction() {
-    var x = document.getElementsByClassName("header__Links");
+    console.log("hej")
+  var x = document.getElementById("headerLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
