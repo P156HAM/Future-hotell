@@ -6,7 +6,6 @@ body{
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
-    max-width: 1200px;
     background-image: url(../images/bonz.ai-logo-black-symbol.png);
     background-size: cover;
 }
@@ -22,6 +21,7 @@ body{
     "footer";
 }
 
+ /*--------------- header-all ---------------*/
 .header{
     grid-area: header;
     min-height: 25.125rem;
@@ -34,8 +34,7 @@ body{
 
 .header__desktop-items{
     width: 100%;
-    /* background-color: #000; */
-    height: 5rem;
+    height: 17%;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +64,7 @@ body{
     color: #fff;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 21px;
     display: block; 
 }
 
@@ -104,7 +103,6 @@ body{
  
 .main-content{
     grid-area: main;
-    height: auto;
     background-color: #DFE4E8;
 }
 
@@ -121,10 +119,11 @@ body{
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
-    width: 10rem;
+    max-width: 55rem;
+    min-width: 10rem;
     height: 22rem;
     margin: 4rem 0;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 }
 
 .content__bar a{
@@ -178,24 +177,40 @@ body{
     border: 0.1px solid ;
 }
 
-/*----------- main content booking page -----------*/
+/*----------- main-content booking page -----------*/
 
 .room-list__booking{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #fff;
     color: #000;
     border-radius: 5rem;
     height: 17rem;
     margin: -5rem 3rem 0 3rem;
+    max-width: 65rem;
+    margin: -5rem auto 0 auto;
 }
 
 .button--booking{
     background-color: #fff;
     color: #000;
+    width: 10rem;
 }
+
+.room-list__input input{
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.room-list__input select{
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+} 
 
 .room-list__input p{
     margin: 0;
@@ -203,23 +218,27 @@ body{
 
 .room-list__title{
     text-align: center;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
+    font-size: 2em;
 }
 
 .room-list__rooms{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    padding: 5rem;
 }
 
 .room-list__room{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    overflow: hidden;
     max-width: 21rem;
     margin-bottom: 2rem;
+    height: 25rem;
 }
 
 .room-list__img{
@@ -227,23 +246,27 @@ body{
     max-width: 20rem;
 }
 
-/*----------- main content virtual page -----------*/
+/*----------- main-content virtual page -----------*/
 
 .images__img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-bottom: 1rem solid #000;
 }
 
 .main-content__title{
     text-align: center;
+    font-size: 2em;
 }
 
 .main-content__about{
     text-align: center;
+    font-size: 2em;
 }
 
-/* --------------footer-------------- */
+/* --------------footer-all-------------- */
+
 .footer{
     grid-area: footer;
     height: 35rem;
@@ -342,6 +365,7 @@ body{
 @media screen and (min-width:600px) {
     .wrapper{
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
         grid-template-areas: 
         "header header header"
         "main main main"
@@ -390,32 +414,17 @@ body{
         flex-direction: row;
     }
 
-    .main-content__grid{
-        display: grid;
-        min-height: 1800px;
-        gap: 5px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-auto-rows: 300px;
-        
-    }
-
     .main-content__images{
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 1rem;
-        grid-column: auto / span 6;
-        grid-row: 2 ;
     }
 
     .images__img{
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 500px;
+        max-height: 500px;
     }
     
-    .main-content__title{
-        grid-column: auto / span 6;
-        margin-top: 9rem;
-    }
 }
